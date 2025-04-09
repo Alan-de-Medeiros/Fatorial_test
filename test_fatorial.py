@@ -1,7 +1,7 @@
 import pytest 
 from fatorial import fatorial
 
-@pytest.mark.parametrize("factor, expected", [(3, 6),(4, 24),(5, 120),(6, 720)])
+@pytest.mark.parametrize("factor, expected", [(4, 24),(7, 5040),(5, 120),(6, 720)])
 
-def test_factor(factor, expected):
+def test_fatorial(factor, expected):
     assert fatorial(factor) == expected
